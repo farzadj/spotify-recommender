@@ -33,9 +33,11 @@ Source: [Kaggle]
    git clone https://github.com/farzadj/spotify-recommender.git
    
    cd spotify-recommender
-3. Install dependencies
+3. Install dependencies:
+
    pip install -r requirements.txt   
-4. Run the app
+4. Run the app:
+   
    streamlit run spotify_recommender_app_extended.py   
 5. Open in browser at http://localhost:8501
 
