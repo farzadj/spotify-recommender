@@ -64,12 +64,19 @@ else:
         matches = df[df['track_name'].str.contains(song_name, case=False, na=False)]
         if matches.empty:
             return None, None
+    
         song_index = matches.index[0]
-        sims = list(enumerate(similarity_matrix[song_index]))
-        sorted_songs = sorted(sims, key=lambda x: x[1], reverse=True)[1:top_n+1]
-        recs = df.iloc[[idx for idx, _ in sorted_songs]][['track_name', 'track_artist', 'playlist_genre']]
-        recs['similarity'] = [score for _, score in sorted_songs]
+        song_vector = feature_data[song_index].reshape(1, -1)
+    
+        # Compute similarity only for this song
+        sims = cosine_similarity(song_vector, feature_data)[0]
+        sorted_indices = np.argsort(sims)[::-1][1:top_n+1]
+    
+        recs = df.iloc[sorted_indices][['track_name', 'track_artist', 'playlist_genre']]
+        recs['similarity'] = sims[sorted_indices]
+    
         return df.loc[song_index, 'track_name'], recs
+
 
     if st.button("🎧 Recommend by Song"):
         song_used, recs = recommend_by_song(input_song)
