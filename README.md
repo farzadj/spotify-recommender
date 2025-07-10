@@ -53,23 +53,18 @@ Source: [Kaggle or internal dataset]
 4. Open in browser at http://localhost:8501
 
 🌐 Deploy on Streamlit Cloud
+
 You can deploy this app for free via Streamlit Community Cloud:
 
-Push this repo to GitHub.
+1.Push this repo to GitHub.
+2.Go to Streamlit Cloud → "New app"
+3.Select the repository and spotify_recommender_app_extended.py as the entry point.
 
-Go to Streamlit Cloud → "New app"
-
-Select the repository and spotify_recommender_app_extended.py as the entry point.
-
-Done!
 
 📦 Dependencies
 streamlit
-
 pandas
-
 scikit-learn
-
 numpy
 
 🙋‍♂️ Author
