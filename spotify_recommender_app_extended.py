@@ -13,9 +13,6 @@ audio_features = ['danceability', 'energy', 'key', 'loudness', 'mode', 'speechin
 scaler = StandardScaler()
 feature_data = scaler.fit_transform(df[audio_features])
 
-# Compute similarity matrix
-similarity_matrix = cosine_similarity(feature_data)
-
 # Title
 st.title("🎧 Spotify Song Recommender")
 st.markdown("Use **audio preferences** or search by **song name** to get personalized recommendations.")
