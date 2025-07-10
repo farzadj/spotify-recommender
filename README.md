@@ -24,7 +24,7 @@ The dataset includes:
 - Audio features like `danceability`, `energy`, `acousticness`, etc.
 - Metadata including `track_name`, `artist`, `album`, `popularity`, and `genre`.
 
-Source: [Kaggle or internal dataset]
+Source: [Kaggle]
 
 ---
 ## 🛠 How to Run Locally
@@ -56,4 +56,5 @@ streamlit, pandas, scikit-learn, numpy
 ---
 ## 🙋‍♂️ Author
 Farzad Jafarinia
+
 Data Scientist | Machine Learning Scientist
