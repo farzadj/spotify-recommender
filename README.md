@@ -31,12 +31,13 @@ Source: [Kaggle]
 
 1. Clone the repo
    git clone https://github.com/farzadj/spotify-recommender.git
+   
    cd spotify-recommender
-2. Install dependencies
+3. Install dependencies
    pip install -r requirements.txt   
-3. Run the app
+4. Run the app
    streamlit run spotify_recommender_app_extended.py   
-4. Open in browser at http://localhost:8501
+5. Open in browser at http://localhost:8501
 
 ---
 ## 🌐 Deploy on Streamlit Cloud
