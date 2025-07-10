@@ -30,7 +30,7 @@ Source: [Kaggle or internal dataset]
 ## 🛠 How to Run Locally
 
 1. Clone the repo
-   git clone https://github.com/your-username/spotify-recommender.git
+   git clone https://github.com/farzadj/spotify-recommender.git
    cd spotify-recommender
 2. Install dependencies
    pip install -r requirements.txt   
@@ -43,16 +43,15 @@ Source: [Kaggle or internal dataset]
 
 You can deploy this app for free via Streamlit Community Cloud:
 
-1.Push this repo to GitHub.
-2.Go to Streamlit Cloud → "New app"
-3.Select the repository and spotify_recommender_app_extended.py as the entry point.
+1. Push this repo to GitHub.
+
+2. Go to Streamlit Cloud → "New app"
+
+3. Select the repository and spotify_recommender_app_extended.py as the entry point.
 
 ---
 ## 📦 Dependencies
-streamlit
-pandas
-scikit-learn
-numpy
+streamlit, pandas, scikit-learn, numpy
 
 ---
 ## 🙋‍♂️ Author
