@@ -6,6 +6,10 @@ This Streamlit web app recommends songs from a curated Spotify dataset based on:
 
 It uses content-based filtering with audio features and cosine similarity to suggest music you might enjoy.
 
+## 🚀 Live Demo
+
+Try the app here: [🎧 Spotify Song Recommender on Streamlit]
+
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://spotify-recommender-thfaveuzqnp4jqulgfqlzh.streamlit.app/)
 
 
