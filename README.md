@@ -8,9 +8,7 @@ It uses content-based filtering with audio features and cosine similarity to sug
 
 ## 🚀 Live Demo
 
-Try the app here: [🎧 Spotify Song Recommender on Streamlit]
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://spotify-recommender-thfaveuzqnp4jqulgfqlzh.streamlit.app/)
+Try the app here: [🎧 Spotify Song Recommender](https://farzadj.github.io/spotify-recommender/)
 
 
 ---
