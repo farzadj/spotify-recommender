@@ -7,19 +7,28 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
     h1 {
       color: #1DB954;
     }
-    .badge img {
-      width: 1250px;
-      height: auto;
-    }
-    .badge {
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%; /* 4:3 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
       margin-top: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
@@ -33,13 +42,19 @@
   </ul>
 
   <h3>🚀 Live Demo</h3>
-  <p>Click below to launch the interactive dashboard:</p>
-            <div class="video-container">
-                <iframe
-                src="https://spotify-recommender-thfaveuzqnp4jqulgfqlzh.streamlit.app/?embed=true"
-                style=border:none;"
-                ></iframe>
-            </div>
+  <p>Embedded demo view below (note: may not work if iframe is blocked):</p>
+
+  <div class="video-container">
+    <iframe
+      src="https://spotify-recommender-thfaveuzqnp4jqulgfqlzh.streamlit.app/?embed=true"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <p>If the demo doesn't load, open it in a new tab:</p>
+  <a href="https://spotify-recommender-thfaveuzqnp4jqulgfqlzh.streamlit.app" target="_blank">
+    👉 Open in Streamlit
+  </a>
 
   <h3>💻 GitHub Repository</h3>
   <p>
@@ -50,4 +65,3 @@
   </p>
 </body>
 </html>
-
