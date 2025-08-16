@@ -19,6 +19,10 @@ Try the app here: [🎧 Spotify Song Recommender](https://farzadj.github.io/spot
 - 🎵 Song-based recommendation:
   - Enter any song name and get similar tracks.
 - 📈 Audio feature standardization and similarity matching using `scikit-learn`.
+- 🔬 **A/B Testing Framework:**
+  - Test 7 different recommendation strategies
+  - Collect user feedback and measure performance
+  - Real-time analytics and strategy comparison
 - 🎨 Built with [Streamlit](https://streamlit.io) — deploys in seconds.
 
 ---
@@ -47,6 +51,26 @@ Source: [Kaggle]
 5. Open in browser at http://localhost:8501
 
 ---
+## 🔬 A/B Testing Framework
+
+This app includes a comprehensive A/B testing framework that allows you to:
+
+- **Test 7 different recommendation strategies** for audio preferences
+- **Test 3 different strategies** for song-based recommendations  
+- **Collect user feedback** on recommendation quality
+- **Track performance metrics** in real-time
+- **Compare strategy effectiveness** with detailed analytics
+
+### How to Use A/B Testing:
+
+1. **Automatic Assignment:** Users are automatically assigned to different strategies
+2. **Feedback Collection:** Rate recommendations as good or bad
+3. **Results Viewing:** Check the "A/B Test Results" tab for analytics
+4. **Strategy Optimization:** Use results to improve recommendation algorithms
+
+For detailed documentation, see [AB_TESTING_README.md](AB_TESTING_README.md)
+
+---
 ## 🌐 Deploy on Streamlit Cloud
 
 You can deploy this app for free via Streamlit Community Cloud:
@@ -59,7 +83,7 @@ You can deploy this app for free via Streamlit Community Cloud:
 
 ---
 ## 📦 Dependencies
-streamlit, pandas, scikit-learn, numpy
+streamlit, pandas, scikit-learn, numpy, uuid
 
 ---
 ## 🙋‍♂️ Author
