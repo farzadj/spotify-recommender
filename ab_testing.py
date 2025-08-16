@@ -33,9 +33,21 @@ class ABTestingFramework:
     
     def load_test_data(self):
         """Load existing test data or create new file"""
-        if os.path.exists(self.data_file):
-            with open(self.data_file, 'r') as f:
-                self.test_data = json.load(f)
+        if os.path.exists(self.data_file) and os.path.getsize(self.data_file) > 0:
+            try:
+                with open(self.data_file, 'r') as f:
+                    self.test_data = json.load(f)
+            except (json.JSONDecodeError, FileNotFoundError):
+                # If file is corrupted or empty, initialize with default data
+                self.test_data = {
+                    'sessions': {},
+                    'feedback': {},
+                    'metrics': {
+                        'total_sessions': 0,
+                        'total_recommendations': 0,
+                        'strategy_performance': {}
+                    }
+                }
         else:
             self.test_data = {
                 'sessions': {},
